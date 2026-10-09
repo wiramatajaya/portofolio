@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio - Web & Mobile Developer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3b82f6',
+                        dark: '#0f172a',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-blue-500 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-slate-900/80 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <a href="#" class="text-xl font-bold bg-gradient-to-r from-blue-400 to-indigo-500 bg-clip-text text-transparent">
+                Portfolio.dev
+            </a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-blue-400 transition">Tentang</a>
+                <a href="#skills" class="hover:text-blue-400 transition">Keahlian</a>
+                <a href="#projects" class="hover:text-blue-400 transition">Proyek</a>
+                <a href="#contact" class="hover:text-blue-400 transition">Kontak</a>
+            </nav>
+            <button id="menu-btn" class="md:hidden text-slate-300 focus:outline-none">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-b border-slate-800 px-6 py-4 space-y-3">
+            <a href="#about" class="block text-slate-300 hover:text-blue-400">Tentang</a>
+            <a href="#skills" class="block text-slate-300 hover:text-blue-400">Keahlian</a>
+            <a href="#projects" class="block text-slate-300 hover:text-blue-400">Proyek</a>
+            <a href="#contact" class="block text-slate-300 hover:text-blue-400">Kontak</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center pt-20 px-6 relative overflow-hidden">
+        <div class="absolute -top-40 -left-40 w-96 h-96 bg-blue-600/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/2 -right-40 w-96 h-96 bg-indigo-600/20 rounded-full blur-3xl pointer-events-none"></div>
+        
+        <div class="max-w-4xl mx-auto text-center z-10 space-y-6">
+            <span class="px-4 py-1.5 rounded-full text-xs font-semibold bg-blue-500/10 text-blue-400 border border-blue-500/20">
+                Web & Mobile Developer
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">
+                Halo, Saya <span class="bg-gradient-to-r from-blue-400 to-indigo-500 bg-clip-text text-transparent">Developer Profesional</span>
+            </h1>
+            <p class="text-lg text-slate-400 max-w-2xl mx-auto">
+                Berpengalaman dalam membangun aplikasi web modern dan aplikasi mobile lintas platform dengan performa tinggi serta antarmuka yang elegan.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 pt-4">
+                <a href="#projects" class="px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-500 font-medium text-white transition shadow-lg shadow-blue-600/30">
+                    Lihat Proyek
+                </a>
+                <a href="#contact" class="px-6 py-3 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 font-medium text-slate-300 transition">
+                    Hubungi Saya
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 px-6 bg-slate-900/50">
+        <div class="max-w-4xl mx-auto space-y-6">
+            <h2 class="text-3xl font-bold tracking-tight text-center">Tentang <span class="text-blue-400">Saya</span></h2>
+            <p class="text-slate-400 text-center leading-relaxed max-w-2xl mx-auto">
+                Saya adalah seorang pengembang perangkat lunak yang berfokus pada pembuatan solusi digital berkualitas tinggi, baik untuk platform web maupun mobile. Berbekal keahlian di bidang HTML, CSS, JavaScript, Node.js, Express.js, React.js, Laravel, dan Flutter, saya siap mengubah ide kreatif menjadi aplikasi yang fungsional dan user-friendly.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 px-6">
+        <div class="max-w-5xl mx-auto space-y-12">
+            <div class="text-center space-y-2">
+                <h2 class="text-3xl font-bold tracking-tight">Keahlian & Teknologi</h2>
+                <p class="text-slate-400">Teknologi yang biasa saya gunakan dalam pengembangan perangkat lunak.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+                <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 text-center space-y-3 hover:border-blue-500/50 transition group">
+                    <i class="fa-brands fa-html5 text-4xl text-orange-500 group-hover:scale-110 transition duration-300"></i>
+                    <h3 class="font-semibold text-slate-200">HTML & CSS</h3>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 text-center space-y-3 hover:border-blue-500/50 transition group">
+                    <i class="fa-brands fa-js text-4xl text-yellow-400 group-hover:scale-110 transition duration-300"></i>
+                    <h3 class="font-semibold text-slate-200">JavaScript</h3>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 text-center space-y-3 hover:border-blue-500/50 transition group">
+                    <i class="fa-brands fa-node-js text-4xl text-green-500 group-hover:scale-110 transition duration-300"></i>
+                    <h3 class="font-semibold text-slate-200">Node.js</h3>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 text-center space-y-3 hover:border-blue-500/50 transition group">
+                    <i class="fa-brands fa-react text-4xl text-cyan-400 group-hover:scale-110 transition duration-300"></i>
+                    <h3 class="font-semibold text-slate-200">React.js</h3>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 text-center space-y-3 hover:border-blue-500/50 transition group">
+                    <i class="fa-solid fa-server text-4xl text-emerald-400 group-hover:scale-110 transition duration-300"></i>
+                    <h3 class="font-semibold text-slate-200">Express.js</h3>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 text-center space-y-3 hover:border-blue-500/50 transition group">
+                    <i class="fa-brands fa-laravel text-4xl text-red-500 group-hover:scale-110 transition duration-300"></i>
+                    <h3 class="font-semibold text-slate-200">Laravel</h3>
+                </div>
+                <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800 text-center space-y-3 hover:border-blue-500/50 transition group">
+                    <i class="fa-solid fa-mobile-screen-button text-4xl text-blue-400 group-hover:scale-110 transition duration-300"></i>
+                    <h3 class="font-semibold text-slate-200">Flutter</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 px-6 bg-slate-900/50">
+        <div class="max-w-6xl mx-auto space-y-12">
+            <div class="text-center space-y-2">
+                <h2 class="text-3xl font-bold tracking-tight">Proyek Unggulan</h2>
+                <p class="text-slate-400">Beberapa karya aplikasi yang pernah saya kembangkan.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Project 1: Perpustakaan -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-slate-700 transition">
+                    <div class="p-6 space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-blue-600/10 text-blue-400 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-book-bookmark"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-100">Manajemen Perpustakaan</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Aplikasi berbasis mobile untuk pengelolaan data buku, peminjaman, dan pengembalian anggota perpustakaan.
+                        </p>
+                        <div class="flex flex-wrap gap-1.5 pt-2">
+                            <span class="px-2.5 py-1 rounded-md bg-blue-500/10 text-blue-400 text-xs font-medium">Flutter</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-medium">SQLite</span>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 bg-slate-950/50 border-t border-slate-800">
+                        <a href="https://github.com/username/repo-perpustakaan" target="_blank" class="inline-flex items-center gap-2 text-sm text-blue-400 hover:text-blue-300 font-medium transition">
+                            <i class="fa-brands fa-github"></i> Lihat di GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2: RentCar -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-slate-700 transition">
+                    <div class="p-6 space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-indigo-600/10 text-indigo-400 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-car"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-100">Aplikasi RentCar</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Platform pemesanan dan rental kendaraan roda empat dengan integrasi sistem pembayaran digital.
+                        </p>
+                        <div class="flex flex-wrap gap-1.5 pt-2">
+                            <span class="px-2.5 py-1 rounded-md bg-indigo-500/10 text-indigo-400 text-xs font-medium">Flutter</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-medium">Supabase</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-medium">Midtrans</span>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 bg-slate-950/50 border-t border-slate-800">
+                        <a href="https://github.com/wiramatajaya" target="_blank" class="inline-flex items-center gap-2 text-sm text-blue-400 hover:text-blue-300 font-medium transition">
+                            <i class="fa-brands fa-github"></i> Lihat di GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3: E-Learning -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-slate-700 transition">
+                    <div class="p-6 space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-600/10 text-emerald-400 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-100">Platform E-Learning</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Sistem pembelajaran online interaktif dengan fitur manajemen materi, kursus, dan modul edukasi.
+                        </p>
+                        <div class="flex flex-wrap gap-1.5 pt-2">
+                            <span class="px-2.5 py-1 rounded-md bg-emerald-500/10 text-emerald-400 text-xs font-medium">Laravel</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-medium">MySQL</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-medium">Tailwind</span>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 bg-slate-950/50 border-t border-slate-800">
+                        <a href="https://github.com/wiramatajaya" target="_blank" class="inline-flex items-center gap-2 text-sm text-blue-400 hover:text-blue-300 font-medium transition">
+                            <i class="fa-brands fa-github"></i> Lihat di GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4: E-Voting -->
+                <div class="bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col justify-between hover:border-slate-700 transition">
+                    <div class="p-6 space-y-4">
+                        <div class="w-12 h-12 rounded-xl bg-orange-600/10 text-orange-400 flex items-center justify-center text-xl">
+                            <i class="fa-solid fa-box-archive"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-100">Aplikasi E-Voting</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Sistem pemilihan suara elektronik berbasis web yang aman, transparan, dan mudah digunakan.
+                        </p>
+                        <div class="flex flex-wrap gap-1.5 pt-2">
+                            <span class="px-2.5 py-1 rounded-md bg-orange-500/10 text-orange-400 text-xs font-medium">HTML/CSS/JS</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-800 text-slate-300 text-xs font-medium">PHP</span>
+                        </div>
+                    </div>
+                    <div class="px-6 py-4 bg-slate-950/50 border-t border-slate-800">
+                        <a href="https://github.com/wiramatajaya" target="_blank" class="inline-flex items-center gap-2 text-sm text-blue-400 hover:text-blue-300 font-medium transition">
+                            <i class="fa-brands fa-github"></i> Lihat di GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6">
+        <div class="max-w-4xl mx-auto text-center space-y-8">
+            <div class="space-y-3">
+                <h2 class="text-3xl font-bold tracking-tight">Mari Berkolaborasi</h2>
+                <p class="text-slate-400">Punya proyek menarik atau ingin terhubung? Silakan temukan saya melalui platform di bawah ini.</p>
+            </div>
+            
+            <!-- Sosmed & Contact Logos -->
+            <div class="flex flex-wrap justify-center items-center gap-6 pt-4">
+                <!-- WhatsApp -->
+                <a href="https://wa.me/085339280504" target="_blank" class="w-14 h-14 rounded-2xl bg-slate-900 border border-slate-800 flex items-center justify-center text-2xl text-slate-300 hover:text-emerald-400 hover:border-emerald-500/50 transition group" title="WhatsApp">
+                    <i class="fa-brands fa-whatsapp group-hover:scale-110 transition duration-300"></i>
+                </a>
+                <!-- Instagram -->
+                <a href="https://instagram.com/mwirr__" target="_blank" class="w-14 h-14 rounded-2xl bg-slate-900 border border-slate-800 flex items-center justify-center text-2xl text-slate-300 hover:text-pink-400 hover:border-pink-500/50 transition group" title="Instagram">
+                    <i class="fa-brands fa-instagram group-hover:scale-110 transition duration-300"></i>
+                </a>
+                <!-- GitHub -->
+                <a href="https://github.com/wiramatajaya" target="_blank" class="w-14 h-14 rounded-2xl bg-slate-900 border border-slate-800 flex items-center justify-center text-2xl text-slate-300 hover:text-white hover:border-slate-600 transition group" title="GitHub">
+                    <i class="fa-brands fa-github group-hover:scale-110 transition duration-300"></i>
+                </a>
+                <!-- Gmail -->
+                <a href="mailto:email@example.com" class="w-14 h-14 rounded-2xl bg-slate-900 border border-slate-800 flex items-center justify-center text-2xl text-slate-300 hover:text-red-400 hover:border-red-500/50 transition group" title="Email">
+                    <i class="fa-solid fa-envelope group-hover:scale-110 transition duration-300"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 border-t border-slate-900 text-center text-sm text-slate-500">
+        <p>&copy; 2026 Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript untuk toggle menu mobile -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
